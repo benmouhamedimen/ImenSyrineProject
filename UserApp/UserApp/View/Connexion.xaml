@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="UserApp.View.Connexion"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserApp.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Connexion" FontSize="30" HorizontalAlignment="Center" Margin="30"/>
+            <TextBox Name="txtemail" PlaceholderText="votre email " Margin="10"/>
+            <PasswordBox Name="motdepasse" PlaceholderText="votre mot de passe" Margin="10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="ms-appx:///Images/btnconx.png" Width="150" Height="50" Stretch="Fill" Name="btncnx" Margin="10"/>
+                <Image Source="ms-appx:///Images/btncreer.png" Width="150" Height="50" Stretch="Fill" Name="btninscrit" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>
