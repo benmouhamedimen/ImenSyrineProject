@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="UserApp.View.Inscrption"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserApp.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <StackPanel>
+            <TextBlock Text="Inscription" FontSize="30" HorizontalAlignment="Center" Margin="20"/>
+            <TextBox Name="txtnom" PlaceholderText="nom" Margin="10" LostFocus="txtnom_LostFocus" GotFocus="txtnom_GotFocus" />
+            <TextBox Name="txtprenom" PlaceholderText="prenom" Margin="10" LostFocus="txtprenom_LostFocus" GotFocus="txtprenom_GotFocus"/>
+            <DatePicker Name="datenaissance" Margin="10" DateChanged="datenaissance_DateChanged" Tapped="datenaissance_Tapped"/>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBox Name="sexe" PlaceholderText="sexe"/>
+                <RadioButton Name="btnh" Content="homme" IsChecked="True"/>
+                <RadioButton Name="btnf" Content="femme"/>
+            </StackPanel>
+            <TextBox Name="txtcin" PlaceholderText="cin" Margin="10" LostFocus="txtcin_LostFocus" GotFocus="txtcin_GotFocus"/>
+            <TextBox Name="txttelephone" PlaceholderText="telephone" Margin="10" LostFocus="txttelephone_LostFocus" GotFocus="txttelephone_GotFocus"/>
+            <TextBox Name="txtmail" PlaceholderText="mail" Margin="10" LostFocus="txtmail_LostFocus" GotFocus="txtmail_GotFocus" />
+            <PasswordBox Name="motedepasse" PlaceholderText="motedepasse" Margin="10" LostFocus="motedepasse_LostFocus" GotFocus="motedepasse_GotFocus"/>
+        </StackPanel>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Name="btnretour" Icon="Back" Label="Retour"/>
+            <AppBarButton Name="btnenregistrer" Icon="Save" Label="Enregistrer"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
