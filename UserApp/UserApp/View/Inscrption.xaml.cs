@@ -32,13 +32,12 @@ namespace UserApp.View
             bool test = txtnom.Text.All(Char.IsLetter);
             if (test == false || txtnom.Text == "")
             {
-                txtnom.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
+                txtnom.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
             }
             else
             {
-                txtnom.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
+                txtnom.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
             }
-
         }
 
         private void txtnom_GotFocus(object sender, RoutedEventArgs e)
@@ -51,12 +50,11 @@ namespace UserApp.View
             bool test = txtprenom.Text.All(Char.IsLetter);
             if (test == false || txtprenom.Text == "")
             {
-                txtprenom.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
+                txtprenom.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
             }
             else
             {
-                txtprenom.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
-
+                txtprenom.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
             }
         }
 
@@ -64,12 +62,11 @@ namespace UserApp.View
         {
             if (datenaissance.Date.Year + 12 < DateTime.Now.Year)
             {
-                datenaissance.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
+                datenaissance.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
             }
             else
             {
-                datenaissance.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
-
+                datenaissance.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
             }
         }
 
@@ -88,11 +85,11 @@ namespace UserApp.View
             bool test = txtcin.Text.All(Char.IsNumber);
             if (test == false || txtcin.Text.Length == 8)
             {
-                txtcin.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
+                txtcin.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
             }
             else
             {
-                txtcin.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
+                txtcin.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
             }
         }
 
@@ -101,36 +98,23 @@ namespace UserApp.View
             bool test = txttelephone.Text.All(Char.IsNumber);
             if (test == false || txttelephone.Text.Length == 8)
             {
-                txttelephone.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
-            }
-            else
-            {
                 txttelephone.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
             }
-        }
-
-        private void adresse_LostFocus(object sender, RoutedEventArgs e)
-        {
-            bool test = adresse.Text.All(Char.IsLetter);
-            if (test == false || adresse.Text == "")
-            {
-                adresse.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
-            }
             else
             {
-                adresse.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
+                txttelephone.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
             }
         }
 
         private void motedepasse_LostFocus(object sender, RoutedEventArgs e)
         {
-            if (motedepasse.Password +.Length <= 8)
+            if (motedepasse.Password.Length <= 8)
             {
-                motedepasse.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
+                motedepasse.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
             }
             else
             {
-                motedepasse.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
+                motedepasse.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Red);
             }
         }
 
@@ -144,14 +128,25 @@ namespace UserApp.View
             txttelephone.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
         }
 
-        private void adresse_GotFocus(object sender, RoutedEventArgs e)
-        {
-            adresse.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
-        }
-
         private void motedepasse_GotFocus(object sender, RoutedEventArgs e)
         {
             motedepasse.BorderBrush = new SolidColorBrush(Windows.UI.Colors.Green);
+        }
+
+        private void txtmail_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (txtmail.Text.Contains("@") == false || txtmail.Text.Contains(".") == false || txtmail.Text.Contains(" ") == true)
+            {
+                txtmail.Foreground = new SolidColorBrush(Windows.UI.Colors.Red);
+            }
+            else
+            {
+                txtmail.Foreground = new SolidColorBrush(Windows.UI.Colors.Green);
+            }
+        }
+        private void txtmail_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtmail.Foreground = new SolidColorBrush(Windows.UI.Colors.Green);
         }
     }
 }

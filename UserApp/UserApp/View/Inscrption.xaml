@@ -20,7 +20,7 @@
             </StackPanel>
             <TextBox Name="txtcin" PlaceholderText="cin" Margin="10" LostFocus="txtcin_LostFocus" GotFocus="txtcin_GotFocus"/>
             <TextBox Name="txttelephone" PlaceholderText="telephone" Margin="10" LostFocus="txttelephone_LostFocus" GotFocus="txttelephone_GotFocus"/>
-            <TextBox Name="adresse" PlaceholderText="adresse" Margin="10" LostFocus="adresse_LostFocus" GotFocus="adresse_GotFocus"/>
+            <TextBox Name="txtmail" PlaceholderText="mail" Margin="10" LostFocus="txtmail_LostFocus" GotFocus="txtmail_GotFocus" />
             <PasswordBox Name="motedepasse" PlaceholderText="motedepasse" Margin="10" LostFocus="motedepasse_LostFocus" GotFocus="motedepasse_GotFocus"/>
         </StackPanel>
     </Grid>
