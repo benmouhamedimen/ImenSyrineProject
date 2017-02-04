@@ -13,9 +13,9 @@ namespace UserApp.Model
         public String prenom { get; set; }
         public String adresse { get; set; }
         public String motDePasse { get; set; }
-        public Int32 cin { get; set; }
+        public int cin { get; set; }
         public String dateNaissance { get; set; }
-        public Int32 telephone { get; set; }
+        public int telephone { get; set; }
         public String sexe { get; set; }
 
 
