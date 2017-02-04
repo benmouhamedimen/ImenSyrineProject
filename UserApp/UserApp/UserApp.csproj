@@ -100,8 +100,13 @@
     </Compile>
     <Compile Include="Model\Utilisateur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+    <Compile Include="View\Connexion.xaml.cs">
+      <DependentUpon>Connexion.xaml</DependentUpon>
+=======
     <Compile Include="View\Inscrption.xaml.cs">
       <DependentUpon>Inscrption.xaml</DependentUpon>
+>>>>>>> refs/remotes/origin/master
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +116,8 @@
     <None Include="UserApp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\btnconx.png" />
+    <Content Include="Images\btncreer.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -129,14 +136,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
+    <Page Include="View\Connexion.xaml">
+=======
     <Page Include="View\Inscrption.xaml">
+>>>>>>> refs/remotes/origin/master
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+<<<<<<< HEAD
+  <ItemGroup />
+=======
   <ItemGroup>
     <Folder Include="Images\" />
   </ItemGroup>
+>>>>>>> refs/remotes/origin/master
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0' ">
     <VisualStudioVersion>15.0</VisualStudioVersion>
   </PropertyGroup>
