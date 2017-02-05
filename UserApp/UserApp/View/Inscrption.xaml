@@ -14,9 +14,9 @@
             <TextBox Name="txtprenom" PlaceholderText="prenom" Margin="10" LostFocus="txtprenom_LostFocus" GotFocus="txtprenom_GotFocus"/>
             <DatePicker Name="datenaissance" Margin="10" DateChanged="datenaissance_DateChanged" Tapped="datenaissance_Tapped"/>
             <StackPanel Orientation="Horizontal" Margin="10">
-                <TextBox Name="sexe" PlaceholderText="sexe"/>
-                <RadioButton Name="btnh" Content="homme" IsChecked="True"/>
-                <RadioButton Name="btnf" Content="femme"/>
+                <TextBlock Name="sexe" Text="sexe"/>
+                <RadioButton Name="btnh" Checked="btnh_Checked" Content="homme" IsChecked="True"/>
+                <RadioButton Name="btnf" Checked="btnf_Checked" Content="femme"/>
             </StackPanel>
             <TextBox Name="txtcin" PlaceholderText="cin" Margin="10" LostFocus="txtcin_LostFocus" GotFocus="txtcin_GotFocus"/>
             <TextBox Name="txttelephone" PlaceholderText="telephone" Margin="10" LostFocus="txttelephone_LostFocus" GotFocus="txttelephone_GotFocus"/>
@@ -26,8 +26,8 @@
     </Grid>
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton Name="btnretour" Icon="Back" Label="Retour"/>
-            <AppBarButton Name="btnenregistrer" Icon="Save" Label="Enregistrer"/>
+            <AppBarButton Name="btnretour" Icon="Back" Label="Retour" Click="btnretour_Click"/>
+            <AppBarButton Name="btnenregistrer" Icon="Save" Label="Enregistrer" Click="btnenregistrer_Click"/>
         </CommandBar>
     </Page.BottomAppBar>
 </Page>

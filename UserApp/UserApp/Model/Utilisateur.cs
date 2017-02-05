@@ -14,7 +14,7 @@ namespace UserApp.Model
         public String mail { get; set; }
         public String motDePasse { get; set; }
         public int cin { get; set; }
-        public String dateNaissance { get; set; }
+        public DateTime dateNaissance { get; set; }
         public int telephone { get; set; }
         public String sexe { get; set; }
 
