@@ -13,8 +13,8 @@
             <TextBox Name="txtemail" PlaceholderText="votre email " Margin="10"/>
             <PasswordBox Name="motdepasse" PlaceholderText="votre mot de passe" Margin="10"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Source="ms-appx:///Images/btnconx.png" Width="150" Height="50" Stretch="Fill" Name="btncnx" Margin="10"/>
-                <Image Source="ms-appx:///Images/btncreer.png" Width="150" Height="50" Stretch="Fill" Name="btninscrit" Margin="10"/>
+                <Image Source="ms-appx:///Images/btnconx.png" Width="150" Height="50" Stretch="Fill" Name="btncnx" Margin="10" Tapped="btncnx_Tapped"/>
+                <Image Source="ms-appx:///Images/btncreer.png" Width="150" Height="50" Stretch="Fill" Name="btninscrit" Margin="10" Tapped="btninscrit_Tapped"/>
             </StackPanel>
         </StackPanel>
 
